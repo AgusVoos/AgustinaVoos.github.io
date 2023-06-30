@@ -1,0 +1,389 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+
+
+/*BARRA SUPERIOR*/
+header{
+  background-color: #b3b1b1;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  padding: 5px 10%;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+}
+.logo img{
+  height: 100px;
+  width: auto;
+  transition: all 0.3s;
+  margin-top: 40px;
+}
+.logo img:hover{
+  transform: scale(1.2);
+}
+.botón img{
+  height: 40px;
+}
+.links{
+  list-style: none;
+}
+.links li{
+  display: inline-block;
+  padding: 0 20px;
+}
+.links li:hover{
+  transform: scale(1.1);
+}
+.links a{
+  color: #000;
+  text-decoration: none;
+}
+.botón button{
+  padding: 9px 25px;
+  background-color:#b3b1b1;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.botón button:hover{
+  transform: scale(1.1);
+}
+/*FIN BARRA SUPERIOR*/
+
+
+
+/*CARRUSEL DE IMÁGENES*/
+body{
+  margin: 0;
+  background-color: #000;
+
+}
+.imagenes{
+  width: 100%;
+  height: 30%;
+  overflow: hidden;
+  text-align:center;
+  background-color: #888;
+}
+.imagenes ul{
+  display: flex;
+  animation: cambio 25s infinite alternate linear;
+  width: 400%;
+}
+.imagenes li{
+  width: 50%;
+  list-style: none;
+}
+
+/*EDITAR IMÁGENES*/
+.imagenes img{
+  width: 50%;
+
+  /*...*/
+}
+
+@keyframes cambio{
+  0%{margin-left: 0;}
+  20%{margin-left: 0;}
+
+  25%{margin-left:-100%;}
+  45%{margin-left:-100%;}
+
+  50%{margin-left:-200%;}
+  70%{margin-left:-200%;}
+
+  75%{margin-left:-300%;}
+  100%{margin-left:-300%;}
+}
+/*FIN DEL CARRUSEL*/
+
+
+
+/*TÍTULO BLACK PANTHER*/
+
+/*NEON*/
+.black {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+  border: none;
+  font: normal 48px/normal "Warnes", Helvetica, sans-serif;
+  color: rgba(255,255,255,1);
+  text-decoration: normal;
+  text-align: center;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  white-space: pre;
+  text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgb(255, 255, 255) , 0 0 30px rgb(255, 255, 255) , 0 0 40px #ffffff , 0 0 70px #e6e6e6 , 0 0 80px #acabac , 0 0 100px #6e6e6e ;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+/*FIN NEON*/
+
+.black{
+  color: #000;
+  font-family: Letra;
+  font-size: 120px;
+  text-align: center;
+  margin-left: 125px;
+  line-height: 140px;
+}
+
+/*LETRA*/
+@font-face{
+  font-family: Letra;
+  src: url("aAtmospheric.ttf");
+}
+
+/*FIN TÍTULO BLACK PANTHER*/
+
+
+
+/*CUADRÍCULAS*/
+
+#cuadricula{
+  width: 1450px;
+  margin:0px auto;
+}
+
+.cuadros img{
+  width: 293px;
+  height: 293px;
+  border-radius: 50px;
+}
+.cuadros{
+  width: 300px;
+  height: 300px;
+  background-color: #888;
+  margin: 30px;
+  float: left;
+  border:3px solid #fff;
+  text-align: center;
+  line-height: 278px;
+  font-size: 22px;
+  font-family: monospace;
+  font-weight: 600;
+  border-radius: 50px;
+
+}
+
+.br{
+  float: none;
+  clear:both;
+}
+/*FIN DE CUADRÍCULA*/
+
+/*FONDO DE CADA CUADRO DE CUADRICULA Y HOVER*/
+.remera{
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 294px;
+  border-radius: 50px;
+  font-family: Letra;
+  list-style: none;
+  text-decoration: none;
+}
+.remera:hover{
+  color:#fff;
+  background-image: url(Cuadricula/Remeras.png);
+  transition: all 0.5s;
+}
+.pantalon{
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 294px;
+  border-radius: 50px;
+  font-family: Letra;
+  list-style: none;
+  text-decoration: none;
+}
+.pantalon:hover{
+  color:#fff;
+  background-image: url(Cuadricula/Pantalones.png);
+  transition: all 0.5s;
+}
+.parka{
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 294px;
+  border-radius: 50px;
+  font-family: Letra;
+  list-style: none;
+  text-decoration: none;
+}
+.parka:hover{
+  color:#fff;
+  background-image: url(Cuadricula/Parka.png);
+  transition: all 0.5s;
+}
+.buzo{
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 294px;
+  border-radius: 50px;
+  font-family: Letra;
+  list-style: none;
+  text-decoration: none;
+}
+.buzo:hover{
+  color:#fff;
+  background-image: url(Cuadricula/Buzo.png);
+  transition: all 0.5s;
+}
+.campera{
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 294px;
+  border-radius: 50px;
+  font-family: Letra;
+  list-style: none;
+  text-decoration: none;
+}
+.campera:hover{
+  color:#fff;
+  background-image: url(Cuadricula/Camperas.png);
+  transition: all 0.5s;
+}
+.camperon{
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 294px;
+  border-radius: 50px;
+  font-family: Letra;
+  list-style: none;
+  text-decoration: none;
+}
+.camperon:hover{
+  color:#fff;
+  background-image: url(Cuadricula/);
+  transition: all 0.5s;
+}
+.bermuda{
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 294px;
+  border-radius: 50px;
+  font-family: Letra;
+  list-style: none;
+  text-decoration: none;
+}
+.bermuda:hover{
+  color:#fff;
+  background-image: url(Cuadricula/);
+  transition: all 0.5s;
+}
+.gorra{
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 294px;
+  border-radius: 50px;
+  font-family: Letra;
+  list-style: none;
+  text-decoration: none;
+}
+.gorra:hover{
+  color:#fff;
+  background-image: url(Cuadricula/);
+  transition: all 0.5s;
+}
+.camisa{
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 294px;
+  border-radius: 50px;
+  font-family: Letra;
+  list-style: none;
+  text-decoration: none;
+}
+.camisa:hover{
+  color:#fff;
+  background-image: url(Cuadricula/Camisas.png);
+  transition: all 0.5s;
+}
+
+.chaleco{
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 294px;
+  border-radius: 50px;
+  font-family: Letra;
+  list-style: none;
+  text-decoration: none;
+}
+.chaleco:hover{
+  color:#fff;
+  background-image: url(Cuadricula/Chalecos.png);
+  transition: all 0.5s;
+}
+.sueter{
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 294px;
+  border-radius: 50px;
+  font-family: Letra;
+  list-style: none;
+  text-decoration: none;
+}
+.sueter:hover{
+  color:#fff;
+  background-image: url(Cuadricula/Sueter.png);
+  transition: all 0.5s;
+}
+.jean{
+  background-repeat: no-repeat;
+  background-size: cover;   
+  height: 294px;
+  border-radius: 50px;
+  font-family: Letra;
+  list-style: none;
+  text-decoration: none;
+}
+.jean:hover{
+  color:#fff;
+  background-image: url(Cuadricula/Jean.png);
+  transition: all 0.5s;
+}
+
+/*FOOTER*/
+footer{
+  align-items: center;
+  text-align: center;
+  background-color: #888;
+  height: 200px;
+  color: #242424;
+  font-family:'Courier New', Courier, monospace;
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  position: relative;
+  margin-top: 70%;
+}
+
+
+/*BLACK PANTHER 2*/
+
+.Indumentaria{
+  font-family: Letra;
+  color: #000;
+  font-size: 20px;
+  text-align: center;
+}
+
+p{
+  float: left;
+  margin-left: 375px;
+  align-items: center;
+  margin-top: 50px;
+}
+p img{
+  height: 90px;
+  margin-top: -35px;
+}
