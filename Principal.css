@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: Letra;
+    src: url("aAtmospheric.ttf");
+}
+@media(max-width: 575.98px) and (orientation: portrait){
+  .cuadros{
+    font-family: Letra;
+    font-size: 16px;
+    background-color: #212121;
+    border: 4px solid #000;
+    border-radius: 25px;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+  }
+  .cuadros a{
+    text-decoration: none;
+    list-style: none;
+    color: #FFF;
+  }
+  .mediospago{
+    color: transparent;
+    font-size: 0;
+  }
+}
+/*BARRA SUPERIOR*/
+header{
+    background-color: #FFF;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 5em;
+    width: 100%;
+    padding: 2em 5%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+.logo img{
+    height: 4.5em;
+    transition: all 0.3s;
+    margin-top: 2em;
+    margin-left: 1em;
+}
+.logo img:hover{
+    transform: scale(1.2);
+}
+.botón img{
+    height: 2em;
+    line-height: 1em;
+}
+
+.botón button{
+    padding: 1.86em 1.5em;
+    background-color:#FFF;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+.botón button:hover{
+    transform: scale(1.1);
+}
+  /*FIN BARRA SUPERIOR*/
+
+
+body{
+    background-color: #000;
+}
+
+/*TÍTULO*/
+#black {
+    margin: 2em;
+    line-height: 5em;
+    background-color: #000;
+    text-align: center;
+    align-items: center;
+}
+
+h1{
+    color: #FFF;
+    font-family: Letra;
+    font-size: 2em;
+    text-align: center;
+    align-items: center;
+}
+footer{
+  background-color: #FFF;
+  text-align: center;
+  align-items: center;
+}
+
+.mediospago{
+  float: left;
+  text-align: center;
+}
+
+.redesfooter{
+  text-align: center;
+  align-items: center;
+}
+.redesfooter img{
+  width: 30px;
+  margin: 10px;
+}
+
+.br{
+  background-color: #000;
+  font-size: 3px;
+}
+
+.programadores{
+  background: linear-gradient(to bottom, #888, #212121) ;
+  color: #858484;
+
+}
+.programadores img{
+  width: 60px;
+  margin: 5px;
+}
+
+
+
+
+
