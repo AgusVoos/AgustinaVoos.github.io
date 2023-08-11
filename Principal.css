@@ -1,0 +1,539 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: Letra;
+    src: url("aAtmospheric.ttf");
+}
+
+/*CELULAR VERTICAL*/
+
+@media (max-width: 575.98px) and (orientation: portrait){
+  .redes{
+    background: linear-gradient(to bottom, #FFF, #a0a0a0, #000);
+  }
+  .cuadros{
+    font-family: Letra;
+    font-size: 16px;
+    background-color: #212121;
+    border: 4px solid #000;
+    border-radius: 25px;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+  }
+  .cuadros a{
+    text-decoration: none;
+    list-style: none;
+    color: #FFF;
+    text-align: center;
+  }
+  .redes img{
+    width: 30px;
+    margin: 15px;
+  }
+}
+
+
+/*TABLET*/
+@media (min-width:576px) and (max-width:991.82px) and (orientation: portrait){
+  header{
+    width: 100%;
+  }
+  .redes{
+    background: linear-gradient(to bottom, #FFF, #a0a0a0, #000);
+  }
+  #black{
+    font-size: 30px;
+  }
+  #ropa{
+    background-color: #000;
+    align-items: center;
+    margin: 0;
+  }
+  .cuadros{
+    margin: 20px;
+    border:3px solid #FFF;
+    text-align: center;
+    line-height: 70px;
+    font-weight: 500;
+    border-radius: 40px;
+    margin-bottom: 0;
+    height: 70px;
+  }
+  .cuadros a{
+    list-style: none;
+    text-decoration: none;
+    color: #FFF;
+    font-family: Letra;
+    font-size: 15px;
+  }
+  footer{
+    position: relative;
+    margin-top: 20px;
+  }
+}
+
+
+/*PC*/
+@media (min-width: 882px){
+  .redes{
+    background-image: linear-gradient(to bottom, #FFF, #a0a0a0, #000) ;
+  }
+  #black{
+    font-size: 50px
+  }
+  #ropa{
+    align-items: center;
+    margin-left: 14%;
+    margin-right: 13%;
+  }
+  .cuadros{
+    margin: 20px;
+    border:4px solid #FFF;
+    text-align: center;
+    align-items: center;
+    line-height: 50px;
+    font-weight: 500;
+    border-radius: 50px;
+    margin-bottom: 0;
+    height: 540px;
+    width: 300px;
+    float: left;
+  }
+  .cuadros a{
+    list-style: none;
+    text-decoration: none;
+    color: #FFF;
+    font-family: Letra;
+    font-size: 25px;
+  }
+  .remera{
+    height: 532px;
+    border-radius: 45px;
+    font-family: Letra;
+    color: #FFF;
+    background-image: linear-gradient(#FFF, #888, #000);
+    transition: all 0.3s;
+  }
+  .remera a{
+    list-style: none;
+    text-decoration: none;
+    color: #FFF;
+    line-height: 540px;
+  }
+  .remera:hover{
+    background-image: url(Cuadricula/Remeras.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    transform: scale(1.1);
+  }
+  .remera img{
+    height: 540px;
+    width: 300px;
+  }
+
+  .pantalon{
+    height: 532px;
+    border-radius: 45px;
+    font-family: Letra;
+    color: #FFF;
+    background-image: linear-gradient(#FFF, #888, #000);
+    transition: all 0.3s;
+  }
+  .pantalon a{
+    list-style: none;
+    text-decoration: none;
+    color: #FFF;
+    line-height: 540px;
+  }
+  .pantalon:hover{
+    background-image: url(Cuadricula/Pantalones.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    transform: scale(1.1);
+  }
+  .pantalon img{
+    height: 540px;
+    width: 300px;
+  }
+
+  .parka{
+    height: 532px;
+    border-radius: 45px;
+    font-family: Letra;
+    color: #FFF;
+    background-image: linear-gradient(#FFF, #888, #000);
+    transition: all 0.3s;
+  }
+  .parka a{
+    list-style: none;
+    text-decoration: none;
+    color: #FFF;
+    line-height: 540px;
+  }
+  .parka:hover{
+    background-image: url(Cuadricula/Parka.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    transform: scale(1.1);
+  }
+  .parka img{
+    height: 540px;
+    width: 300px;
+  }
+
+  .buzo{
+    height: 532px;
+    border-radius: 45px;
+    font-family: Letra;
+    color: #FFF;
+    background-image: linear-gradient(#FFF, #888, #000);
+    transition: all 0.3s;
+  }
+  .buzo a{
+    list-style: none;
+    text-decoration: none;
+    color: #FFF;
+    line-height: 540px;
+  }
+  .buzo:hover{
+    background-image: url(Cuadricula/Buzo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    transform: scale(1.1);
+  }
+  .buzo img{
+    height: 540px;
+    width: 300px;
+  }
+
+  .campera{
+    height: 532px;
+    border-radius: 45px;
+    font-family: Letra;
+    color: #FFF;
+    background-image: linear-gradient(#FFF, #888, #000);
+    transition: all 0.3s;
+  }
+  .campera a{
+    list-style: none;
+    text-decoration: none;
+    color: #FFF;
+    line-height: 540px;
+  }
+  .campera:hover{
+    background-image: url(Cuadricula/Camperas.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    transform: scale(1.1);
+  }
+  .campera img{
+    height: 540px;
+    width: 300px;
+  }
+
+  .camperon{
+    height: 532px;
+    border-radius: 45px;
+    font-family: Letra;
+    color: #FFF;
+    background-image: linear-gradient(#FFF, #888, #000);
+    transition: all 0.3s;
+  }
+  .camperon a{
+    list-style: none;
+    text-decoration: none;
+    color: #FFF;
+    line-height: 540px;
+  }
+  .camperon:hover{
+    background-image: url(Cuadricula/Remeras.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    transform: scale(1.1);
+  }
+  .camperon img{
+    height: 540px;
+    width: 300px;
+  }
+
+  .bermuda{
+    height: 532px;
+    border-radius: 45px;
+    font-family: Letra;
+    color: #FFF;
+    background-image: linear-gradient(#FFF, #888, #000);
+    transition: all 0.3s;
+  }
+  .bermuda a{
+    list-style: none;
+    text-decoration: none;
+    color: #FFF;
+    line-height: 540px;
+  }
+  .bermuda:hover{
+    background-image: url(Cuadricula/Remeras.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    transform: scale(1.1);
+  }
+  .bermuda img{
+    height: 540px;
+    width: 300px;
+  }
+
+  .gorra{
+    height: 532px;
+    border-radius: 45px;
+    font-family: Letra;
+    color: #FFF;
+    background-image: linear-gradient(#FFF, #888, #000);
+    transition: all 0.3s;
+  }
+  .gorra a{
+    list-style: none;
+    text-decoration: none;
+    color: #FFF;
+    line-height: 540px;
+  }
+  .gorra:hover{
+    background-image: url(Cuadricula/Remeras.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    transform: scale(1.1);
+  }
+  .gorra img{
+    height: 540px;
+    width: 300px;
+  }
+
+  .camisa{
+    height: 532px;
+    border-radius: 45px;
+    font-family: Letra;
+    color: #FFF;
+    background-image: linear-gradient(#FFF, #888, #000);
+    transition: all 0.3s;
+  }
+  .camisa a{
+    list-style: none;
+    text-decoration: none;
+    color: #FFF;
+    line-height: 540px;
+  }
+  .camisa:hover{
+    background-image: url(Cuadricula/Camisas.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    transform: scale(1.1);
+  }
+  .camisa img{
+    height: 540px;
+    width: 300px;
+  }
+
+  .chaleco{
+    height: 532px;
+    border-radius: 45px;
+    font-family: Letra;
+    color: #FFF;
+    background-image: linear-gradient(#FFF, #888, #000);
+    transition: all 0.3s;
+  }
+  .chaleco a{
+    list-style: none;
+    text-decoration: none;
+    color: #FFF;
+    line-height: 540px;
+  }
+  .chaleco:hover{
+    background-image: url(Cuadricula/Chalecos.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    transform: scale(1.1);
+  }
+  .chaleco img{
+    height: 540px;
+    width: 300px;
+  }
+
+  .sueter{
+    height: 532px;
+    border-radius: 45px;
+    font-family: Letra;
+    color: #FFF;
+    background-image: linear-gradient(#FFF, #888, #000);
+    transition: all 0.3s;
+  }
+  .sueter a{
+    list-style: none;
+    text-decoration: none;
+    color: #FFF;
+    line-height: 540px;
+  }
+  .sueter:hover{
+    background-image: url(Cuadricula/Sueter.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    transform: scale(1.1);
+  }
+  .sueter img{
+    height: 540px;
+    width: 300px;
+  }
+
+  .jean{
+    height: 532px;
+    border-radius: 45px;
+    font-family: Letra;
+    color: #FFF;
+    background-image: linear-gradient(#FFF, #888, #000);
+    transition: all 0.3s;
+  }
+  .jean a{
+    list-style: none;
+    text-decoration: none;
+    color: #FFF;
+    line-height: 540px;
+  }
+  .jean:hover{
+    background-image: url(Cuadricula/Jean.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    transform: scale(1.1);
+  }
+  .jean img{
+    height: 540px;
+    width: 300px;
+  }
+
+  footer{
+    float: left;
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+  }
+}
+
+/*BARRA SUPERIOR*/
+header{
+    background-color: #FFF;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 5em;
+    width: 100%;
+    padding: 2em 5%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+  
+}
+.logo img{
+    height: 4.5em;
+    transition: all 0.3s;
+    margin-top: 2em;
+    margin-left: 1em;
+}
+.logo img:hover{
+    transform: scale(1.2);
+}
+.botón img{
+    height: 2em;
+    line-height: 1em;
+}
+
+.botón button{
+    padding: 1.86em 1.5em;
+    background-color:#FFF;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+.botón button:hover{
+    transform: scale(1.1);
+}
+  /*FIN BARRA SUPERIOR*/
+
+
+/*REDES*/
+.redes{
+  text-align: center;
+  align-items: center;
+  width: auto;
+  margin-top: 0;
+}
+.redes li{
+  list-style: none;
+  text-decoration: none;
+  display: inline;
+}
+.redes img{
+  width: 20px;
+  margin: 5px;
+}
+
+body{
+    background-color: #000;
+}
+
+/*TÍTULO*/
+#black {
+    margin: 3em;
+    line-height: 5em;
+    text-align: center;
+    align-items: center;
+}
+h1{
+  color: #FFF;
+  font-family: Letra;
+  text-align: center;
+  align-items: center;
+}
+
+/*FOOTER*/
+footer{
+  background-color: #FFF;
+  text-align: center;
+  align-items: center;
+}
+
+.redesfooter{
+  text-align: center;
+  align-items: center;
+}
+.redesfooter img{
+  width: 30px;
+  margin: 10px;
+}
+
+.programadores{
+  background: linear-gradient(to bottom, #FFF, #000) ;
+  color: #858484;
+  border-top: 3px solid #000;
+
+}
+.programadores img{
+  width: 50px;
+  margin: 5px;
+}
+
+
+
+
+
