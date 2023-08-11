@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  } 
+  
+  /*LETRA*/
+@font-face{
+  font-family: Letra;
+  src: url("aAtmospheric.ttf");
+}
+
+
+  /*BARRA SUPERIOR*/
+header{
+    background-color: #b3b1b1;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    padding: 5px 10%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+.logo img{
+    height: 100px;
+    width: auto;
+    transition: all 0.3s;
+    margin-top: 40px;
+}
+.logo img:hover{
+    transform: scale(1.2);
+}
+.botón img{
+    height: 40px;
+}
+.links{
+    list-style: none;
+}
+.links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+.links li:hover{
+    transform: scale(1.1);
+}
+.links a{
+    color: #000;
+    text-decoration: none;
+}
+.botón button{
+    padding: 9px 25px;
+    background-color:#b3b1b1;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.botón button:hover{
+    transform: scale(1.1);
+}
+  /*FIN BARRA SUPERIOR*/
+
+body{
+    background-color: #000;
+}
+  
+/*BARRA LATERAL*/
+.menu ul{
+  list-style: none;
+  font-family: Letra;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  line-height: 81px;
+  background-color: #303030;
+  
+}
+.menu li a{
+  display: block;
+  color: #FFF;
+  padding: 0px 16px;
+  text-decoration: none;
+}
+.menu li a:hover{
+  background-color: #3e3e3e;
+}
+
+.imagenes{
+    background-color: #303030;
+    border-radius: 50%;
+    padding: 20px;
+}
