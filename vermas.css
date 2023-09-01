@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: Letra;
+    src: url("aAtmospheric.ttf");
+}
+
+/*CELULAR VERTICAL*/
+
+@media (max-width: 575.98px) and (orientation: portrait){
+
+  .fotos img{
+    height: 5em;
+    width: auto;
+  }
+}
+
+
+/*TABLET*/
+@media (min-width:576px) and (max-width:991.82px) and (orientation: portrait){
+  header{
+    width: 100%;
+  }
+  
+  .fotos img{
+    height: 2em;
+    width: auto;
+  }
+  footer{
+    position: relative;
+    margin-top: 20px;
+  }
+}
+
+
+/*PC*/
+@media (min-width: 882px){
+  
+  .fotos img{
+    height: 16em;
+    width: auto;
+  }
+
+  footer{
+    float: left;
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+  }
+}
+
+/*BARRA SUPERIOR*/
+header{
+    background-color: #FFF;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 5em;
+    width: 100%;
+    padding: 2em 5%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+  
+}
+.logo img{
+    height: 4.5em;
+    transition: all 0.3s;
+    margin-top: 2em;
+    margin-left: 1em;
+}
+.logo img:hover{
+    transform: scale(1.2);
+}
+header a img{
+  height: 40px;
+}
+  /*FIN BARRA SUPERIOR*/
+
+
+/*REDES*/
+.redes{
+  text-align: center;
+  align-items: center;
+  width: auto;
+  margin-top: 0;
+}
+.redes li{
+  list-style: none;
+  text-decoration: none;
+  display: inline;
+}
+.redes img{
+  height: 1.5em;
+  margin: 1em;
+}
+
+body{
+    background-color: #000;
+}
+
+
+/*COLORES*/
+.colores {
+  background-color: #FFF;
+  margin: 2em;
+  height: 3em;
+  border-radius: 25px;
+  text-align: center;
+}
+.colores li{
+  list-style: none;
+  padding: 1em;
+  display: inline;
+  line-height: 3em;
+}
+.colores li a{
+  text-decoration: none;
+  font-family: Letra;
+  color: #000;
+}
+.colores li a:hover{
+  color: #a0a0a0;
+}
+
+.fotos{
+  background-color: #FFF;
+  border-radius: 20px;
+  margin: 2em;
+  padding: 2.3em;
+}
+/*---------------------------BAJAR EL FOOTER-------------------------------------------------------------------------------------------------------*/
+/*FOOTER*/
+.programadores{
+  background: linear-gradient(to bottom, #FFF, #000) ;
+  color: #858484;
+  border-top: 3px solid #000;
+  text-align: center;
+
+}
+.programadores img{
+  width: 50px;
+  margin: 5px;
+}
