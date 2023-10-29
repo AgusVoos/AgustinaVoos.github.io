@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: Letra;
+    src: url("aAtmospheric.ttf");
+}
+
+/*CELULAR VERTICAL*/
+
+@media (max-width: 575.98px) and (orientation: portrait){
+  
+  .cuadros img{
+    height: 0;
+    width: 0;
+  }
+  .cuadros{
+    font-family: Letra;
+    font-size: 16px;
+    background-color: #212121;
+    border: 4px solid #000;
+    border-radius: 25px;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+  }
+  .cuadros a{
+    text-decoration: none;
+    list-style: none;
+    color: #FFF;
+    text-align: center; 
+  }
+
+
+  .whatsapp{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+  }
+  .whatsapp img{
+    height: 50px;
+  }
+}
+
+
+/*TABLET*/
+@media (min-width:576px) and (max-width:991.82px) and (orientation: portrait){
+  header{
+    width: 100%;
+  }
+  .redes{
+    background: linear-gradient(to bottom, #FFF, #a0a0a0, #000);
+  }
+  #black{
+    font-size: 30px;
+  }
+  .cuadros img{
+    height: 0;
+    width: 0;
+  }
+  #ropa{
+    background-color: #000;
+    align-items: center;
+    margin: 0;
+  }
+  .cuadros{
+    margin: 20px;
+    border:3px solid #FFF;
+    text-align: center;
+    line-height: 70px;
+    font-weight: 500;
+    border-radius: 40px;
+    margin-bottom: 0;
+    height: 70px;
+  }
+  .cuadros a{
+    list-style: none;
+    text-decoration: none;
+    color: #FFF;
+    font-family: Letra;
+    font-size: 15px;
+  }
+  footer{
+    position: relative;
+    margin-top: 20px;
+  }
+  .whatsapp img{
+    height: 0;
+    width: 0;
+  }
+}
+
+
+/*PC*/
+@media (min-width: 882px){
+  .redes{
+    background-image: linear-gradient(to bottom, #FFF, #a0a0a0, #000) ;
+  }
+  #black{
+    font-size: 70px;
+  }
+  
+  .ropa{
+  margin: 15px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  padding: 10px;
+  border-radius: 25px;
+  }
+  .cuadros img{
+    width: 100%;
+    border-radius: 20px;
+  }
+  .cuadros{
+    position: relative;
+    font-family: Letra;
+    height: 545px;
+    background-color: #363636;
+    border: 3px solid #FFF;
+    border-radius: 25px;
+    line-height: 545px;
+    margin-left: 5%;
+    margin-top: 5%;
+    text-align: center;    
+  }
+  .cuadros a{
+    color: #FFF;
+    font-size: 25px;
+    text-decoration: none;
+    list-style: none;
+    width: auto;
+  }
+  .cuadros img{
+    background-size: cover;
+    border: 3px solid #FFF;
+  }
+  .remera:hover{
+    background-image: url(Remeras.png);
+    border-radius: 25px;
+    background-position: center;
+    background-size: cover;
+    transform: scale(1.1);
+  }
+  .pantalon:hover{
+    background-image: url(Pantalones.png);
+    border-radius: 25px;
+    background-position: center;
+    background-size: cover;
+    transform: scale(1.1);
+  }
+  .buzo:hover{
+    background-image: url(Buzo.png);
+    border-radius: 25px;
+    background-position: center;
+    background-size: cover;
+    transform: scale(1.1);
+  }
+  .campera:hover{
+    background-image: url(Camperas.png);
+    border-radius: 25px;
+    background-position: center;
+    background-size: cover;
+    transform: scale(1.1);
+  }
+  .bermuda:hover{
+    background-image: url(Remeras.png);
+    border-radius: 25px;
+    background-position: center;
+    background-size: cover;
+    transform: scale(1.1);
+  }
+  .gorra:hover:hover{
+    background-image: url(Remeras.png);
+    border-radius: 25px;
+    background-position: center;
+    background-size: cover;
+    transform: scale(1.1);
+  }
+  .camisa:hover{
+    background-image: url(Camisas.png);
+    border-radius: 25px;
+    background-position: center;
+    background-size: cover;
+    transform: scale(1.1);
+  }
+  .sueter:hover{
+    background-image: url(Sueter.png);
+    border-radius: 25px;
+    background-position: center;
+    background-size: cover;
+    transform: scale(1.1);
+  }
+  .jean:hover{
+    background-image: url(Jean.png);
+    border-radius: 25px;
+    background-position: center;
+    background-size: cover;
+    transform: scale(1.1);
+  }
+
+ 
+
+  footer{
+    float: left;
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+  }
+  .whatsapp img{
+    height: 0;
+    width: 0;
+  }
+}
+
+/*BARRA SUPERIOR*/
+header{
+    background-color: #FFF;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 5em;
+    width: 100%;
+    padding: 2em 5%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+  
+}
+.logo img{
+    height: 4.5em;
+    transition: all 0.3s;
+    margin-top: 2em;
+    margin-left: 1em;
+}
+.logo img:hover{
+    transform: scale(1.2);
+}
+header a img{
+  height: 40px;
+}
+.usuario a{
+  font-family: Letra;
+  color: #000;
+  text-decoration: none;
+  list-style: none;
+}
+  /*FIN BARRA SUPERIOR*/
+
+
+/*REDES*/
+.redes{
+  text-align: center;
+  align-items: center;
+  width: auto;
+  margin-top: 0;
+}
+.redes li{
+  list-style: none;
+  text-decoration: none;
+  display: inline;
+}
+.redes img{
+  width: 50px;
+  margin: 5px;
+}
+
+body{
+    background-color: #000;
+}
+
+/*TÍTULO*/
+.black {
+  margin-top: 10em;
+  margin-bottom: 10em;
+  line-height: 55px;
+  text-align: center;
+  align-items: center;
+}
+h1{
+  color: #FFF;
+  font-family: Letra;
+  font-size: 55px;
+  text-align: center;
+  align-items: center;
+}
+
+
+
+
+/*FOOTER*/
+footer{
+  background-color: #FFF;
+  text-align: center;
+  align-items: center;
+}
+
+.redesfooter{
+  text-align: center;
+  align-items: center;
+}
+.redesfooter img{
+  width: 50px;
+  margin: 10px;
+}
+
+.programadores{
+  background: linear-gradient(to bottom, #FFF, #000) ;
+  color: #858484;
+  border-top: 3px solid #000;
+
+}
+.programadores img{
+  width: 50px;
+  margin: 5px;
+}
