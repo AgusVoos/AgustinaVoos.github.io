@@ -1,0 +1,474 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face{
+  font-family: Letra;
+  src: url("aAtmospheric.ttf");
+}
+
+/*----------------------------------------------------------------CELULAR y TABLET----------------------------------------------------------------------*/
+@media (max-width: 1082px) and (orientation: portrait){
+
+/*BARRA LATERAL*/
+  .menu li{
+    color: transparent;
+    font-size: 0;
+    float: left;
+  }
+/*BODY*/
+  body{
+    background-color: #000;
+  }
+  .titulo{
+    background-color: #FFF;
+    margin: 10px;
+    border-radius: 25px;
+    text-align: center;
+  }
+  h1{
+    color: #000;
+    font-family: Letra;
+    padding: 5px;
+  }
+
+  .whatsapp{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 1;
+  }
+  .whatsapp img{
+    height: 50px;
+  }
+
+
+
+/*IMAGENES Y PRECIOS*/
+  .contenedor{
+    display: block;
+    background-color: #FFF;
+    grid-gap: 30px;
+    grid-row-gap: 30px ;
+    width: 100%;
+    transition: .3s;
+    align-items: center;
+    font-family: Letra;
+    overflow: hidden;
+  }
+  .contenedor .galeria{
+    margin-top: 30px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
+    grid-row-gap: 20px ;
+    width: 60%;
+    transition: .3s;
+    margin-left: 20%;
+  }
+  .contenedor .galeria .item{
+    max-width: 250px;
+    padding: 10px;
+    margin: auto;
+    border: 2px solid #000;
+    border-radius: 10px;
+    transition: .3s;
+    text-align: center;
+  }
+  .galeria .item:hover{
+    box-shadow: 0 0 10px #313131;
+    scale: 1.05;
+  }
+  .galeria .item .img-item{
+    width: 100%;
+
+  }
+
+  .carrito{
+    border: 1px solid #000;
+    width: 100%;
+    margin-top: 30px;
+    overflow: hidden;
+    margin-bottom: auto;
+    position: sticky !important;
+    top: 0;
+    transition: .3s;
+  }
+
+  .carrito .header-carrito{
+    background-color: #000;
+    color: #FFF;
+    text-align: center;
+    padding: 30px 0;
+  }
+  .carrito .carrito-item .carrito-item-titulo{
+    display: block;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+
+
+  .carrito .carrito-item{
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-bottom: 1px solid #000;
+    padding: 20px;
+    font-size: 12px;
+  }
+  .carrito .carrito-item img{
+    margin-right: 20px;
+  }
+  .carrito .carrito-item .selector-cantidad{
+    display: inline-block;
+    margin-right: 25px;
+  }
+  .carrito .carrito-item .carrito-item-cantidad{
+    border: none;
+    font-size: 10px;
+    background: transparent;
+    display: inline-block;
+    width: 30px;
+    padding: 5px;
+    text-align: center;
+  }
+  .carrito .carrito-item .selector-cantidad i{
+    font-size: 15px;
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .carrito .carrito-item .carrito-item-precio{
+    margin-bottom: 5px;
+    display: inline-block;
+    font-size: 15px;
+  }
+  .carrito .carrito-item .btn-eliminar{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    color: #000;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    display: block;
+    background: transparent;
+    z-index: 20;
+  }
+  .carrito .carrito-item .btn-eliminar i{
+    pointer-events: none;
+  }
+  .carrito-total{
+    background-color: #000;
+    color: #FFF;
+    padding: 30px;
+  }
+  .carrito-total .fila{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .carrito-total .btn-pagar{
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #FFF;
+    color: #000;
+    border-radius: 5px;
+    font-family: Letra;
+    font-size: 15px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s;
+  }
+  .carrito-total .btn-pagar:hover{
+    scale: 1.05;
+  }
+
+
+
+  .redes{
+    margin-bottom: 100%;
+    margin-left: 50%;
+  }
+  .redes img{
+    height: 50px;
+  }
+}
+
+
+
+
+
+
+
+/*-----------------------------------------------------------------PC---------------------------------------------------------------------------*/
+@media (min-width:940px){
+  body{
+    background-color: #000;
+  }
+  .menu ul{
+    list-style: none;
+    font-family: Letra;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    line-height: 78px;
+    background-color: #000;
+    float: left;
+  }
+  .menu li a{
+    display: block;
+    color: #FFF;
+    padding: 0px 12px;
+    text-decoration: none;
+  }
+  .menu li a:hover{
+    background-color: #272626;
+  }
+
+  .redes{
+    text-align:right;
+    margin-bottom: 100%;
+  }
+  .redes img{
+    height: 50px;
+  }
+
+  /*-----------IMÁGENES Y PRECIOS----*/
+  .titulo{
+    background-color: #FFF;
+    margin: 10px;
+    margin-left: 15%;
+    border-radius: 25px;
+  }
+  h1{
+    text-align: center;
+    color: #000;
+    font-family: Letra;
+    padding: 5px;
+  }
+
+
+  .contenedor{
+    max-width: 80%;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    contain: paint; /*el video dice que oculta lo que queda fuera del contenedor*/
+    background-color: #FFF;
+    border-radius: 25px;
+    font-family: Letra;
+  }
+  .contenedor .galeria{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+    grid-gap: 30px;
+    grid-row-gap: 30px ;
+    width: 100%;
+    transition: .3s;
+  }
+  .contenedor .galeria .item{
+    max-width: 200px;
+    padding: 10px;
+    margin: auto;
+    border: 2px solid #000;
+    border-radius: 10px;
+    transition: .3s;
+  }
+  .galeria .item:hover{
+    box-shadow: 0 0 10px #313131;
+    scale: 1.05;
+  }
+  .galeria .item .img-item{
+    width: 100%;
+
+  }
+  .galeria .item .titulo{
+    display: block;
+    font-size: 13px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .galeria .item .precio{
+    display: block;
+    text-align: center;
+    font-size: 17px;
+  }
+  .galeria .item .boton{
+    display: block;
+    margin: 10px auto;
+    border: none;
+    background-color: #000;
+    color: #FFF;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 1000;
+    font-size: 12px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+
+  /*--------------------------------------------------CARRITO-----------------------------*/
+
+  .carrito{
+    border: 1px solid #000;
+    width: 35%;
+    margin-top: 30px;
+    overflow: hidden;
+    margin-bottom: auto;
+    position: sticky !important;
+    top: 0;
+    transition: .3s;
+    opacity: 0;
+    margin-right: -100%;
+  }
+  .carrito .header-carrito{
+    background-color: #000;
+    color: #FFF;
+    text-align: center;
+    padding: 30px 0;
+  }
+  .carrito .carrito-item{
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-bottom: 1px solid #000;
+    padding: 20px;
+    font-size: 12px;
+  }
+  .carrito .carrito-item img{
+    margin-right: 20px;
+  }
+  .carrito .carrito-item .carrito-item-titulo{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  .carrito .carrito-item .selector-cantidad{
+    display: inline-block;
+    margin-right: 25px;
+  }
+  .carrito .carrito-item .carrito-item-cantidad{
+    border: none;
+    font-size: 15px;
+    background: transparent;
+    display: inline-block;
+    width: 30px;
+    padding: 5px;
+    text-align: center;
+  }
+  .carrito .carrito-item .selector-cantidad i{
+    font-size: 15px;
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .carrito .carrito-item .carrito-item-precio{
+    margin-bottom: 5px;
+    display: inline-block;
+    font-size: 15px;
+  }
+  .carrito .carrito-item .btn-eliminar{
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    color: #000;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    display: block;
+    background: transparent;
+    z-index: 20;
+  }
+  .carrito .carrito-item .btn-eliminar i{
+    pointer-events: none;
+  }
+  .carrito-total{
+    background-color: #000;
+    color: #FFF;
+    padding: 30px;
+  }
+  .carrito-total .fila{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .carrito-total .btn-pagar{
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #FFF;
+    color: #000;
+    border-radius: 5px;
+    font-family: Letra;
+    font-size: 15px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s;
+  }
+  .carrito-total .btn-pagar:hover{
+    scale: 1.05;
+  }
+
+
+
+
+
+  .whatsapp img{
+    height: 0;
+    width: 0;
+  }
+}
+
+  /*HEADER*/
+header{
+  background-color: #FFF;
+  height: 8vh;
+  align-items: center;
+}
+.logo{
+  float: left;
+}
+.logo a img{
+  height: 70px;
+  margin-top: 5px;
+  margin-left: 25px;
+}
+.redes li{
+  list-style: none;
+  display: inline;
+  justify-content: space-between;
+}
+.redes a img{
+  width: auto;
+}
