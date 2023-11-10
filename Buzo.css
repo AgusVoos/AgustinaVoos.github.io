@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  @font-face{
+    font-family: Letra;
+    src: url("aAtmospheric.ttf");
+  }
+  
+  /*----------------------------------------------------------------CELULAR y TABLET-------------------------------------------------------------------------*/
+  @media (max-width: 991.82px) and (orientation: portrait){
+  
+  /*BARRA LATERAL*/
+  .menu li{
+    color: transparent;
+    font-size: 0;
+    float: left;
+  }
+  /*BODY*/
+  body{
+    background-color: #000;
+  }
+  .titulo{
+    background-color: #FFF;
+    margin: 10px;
+    border-radius: 25px;
+  }
+  h1{
+    color: #000;
+    font-family: Letra;
+    padding: 5px;
+  }
+  
+  .whatsapp{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 1;
+  }
+  .whatsapp img{
+    height: 50px;
+  }
+  
+  /*IMAGENES Y PRECIOS*/
+  .galeria{
+    margin: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    background-color: #FFF;
+    padding: 10px;
+    border-radius: 25px;
+  }
+  .precios img{
+    width: 100%;
+    border-radius: 20px;
+  }
+  .precios{
+    position: relative;
+  }
+  .precios h3{
+    position: absolute;
+    bottom: 0;
+    color: #FFF;
+    background: #000;
+    width: auto;
+    margin: 0;
+    padding: 5px;
+    font-family: Letra;
+    font-size: 14px;
+  }
+  .precios h2{
+    position: absolute;
+    font-size: 15px;
+    font-family: Letra;
+    color: #000;
+    top: 10px;
+    right: 10px;
+    background-color: #FFF;
+  }
+  .redes{
+    margin-bottom: 100%;
+  }
+  .redes img{
+    height: 50px;
+  }
+  }
+  
+  
+  
+  
+  
+  /*-----------------------------------------------------------------PC---------------------------------------------------------------------------*/
+  @media (min-width:887px){
+    body{
+      background-color: #000;
+    }
+    .menu ul{
+      list-style: none;
+      font-family: Letra;
+      font-size: 20px;
+      margin: 0;
+      padding: 0;
+      width: 15%;
+      line-height: 78px;
+      background-color: #000;
+      float: left;
+    }
+    .menu li a{
+      display: block;
+      color: #FFF;
+      padding: 0px 12px;
+      text-decoration: none;
+    }
+    .menu li a:hover{
+      background-color: #272626;
+    }
+  
+    .redes{
+      text-align:right;
+      margin-bottom: 100%;
+    }
+    .redes img{
+      height: 50px;
+    }
+  
+    /*-----------IMÁGENES Y PRECIOS----*/
+    .titulo{
+      background-color: #FFF;
+      margin: 10px;
+      margin-left: 15%;
+      border-radius: 25px;
+    }
+    h1{
+      text-align: center;
+      color: #000;
+      font-family: Letra;
+      padding: 5px;
+    }
+  
+  
+    .galeria{
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-gap: 10px;
+      background-color: #FFF;
+      padding: 10px;
+      border-radius: 25px;
+      margin-right: 0.7%;
+    }
+    
+    .precios img{
+      width: 100%;
+      border-radius: 20px;
+    }
+    .precios{ 
+      position: relative;
+    }
+    .precios a img{
+      height: 0;
+      width: 0;
+    }
+    .precios h3{
+      position: absolute;
+      bottom: 0;
+      color: #FFF;
+      background-color: #000;
+      width: auto;
+      margin: 0;
+      padding: 5px;
+      font-family: Letra;
+      font-size: 16px;
+    }
+    .precios h2{
+      position: absolute;
+      font-size: 15px;
+      font-family: Letra;
+      color: #000;
+      top: 10px;
+      right: 10px;
+      background-color: #FFF;
+    }
+  .precios h2:hover{
+    font-size: 37px;
+  }
+  
+    
+  
+    .whatsapp img{
+      height: 0;
+      width: 0;
+    }
+  }
+  
+    /*HEADER*/
+    header{
+      background-color: #FFF;
+      height: 6vh;
+      align-items: center;
+    }
+    .logo{
+      float: left;
+    }
+    .logo a img{
+      height: 70px;
+      margin-top: 5px;
+      margin-left: 25px;
+    }
+    .redes li{
+      list-style: none;
+      display: inline;
+      justify-content: space-between;
+    }
+    .redes a img{
+      width: auto;
+    }

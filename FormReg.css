@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: Letra;
+    src: url("aAtmospheric.ttf");
+}
+.registro{
+    width: 450px;
+    background-color: #FFF;
+    padding: 50px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 5px;
+    font-family: Letra;
+    border: 3px solid #FFF;
+}
+.registro h3{
+    font-size: 19.5px;
+    margin-top: 2px;
+}
+.controls{
+    width: 100%;
+    background-color: #FFF;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #b5b5b5;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 15px;
+    font-weight: 700;
+    color: #FFF;
+}
+.registro{
+    height: 40px;
+    text-align: center;
+    align-items: center;
+    font-size: 18px;
+    line-height: 50px;
+    border: 1px solid #FFF;
+}
+.registro a{
+    color: #FFF;
+    text-decoration: none;
+}
+.registro p a:hover{
+    color: #888;
+}
+.registro .botons{
+    width: 100%;
+    background-color: #FFF;
+    border-radius: 20px;
+    border: none;
+    padding: 12px;
+    color: #000;
+    margin: 16px 5;
+    font-size: 16px;
+    font-family: Letra;
+}
+.registro button{
+    width: 100%;
+    background-color: #FFF;
+    border-radius: 20px;
+    border: none;
+    
+    padding: 12px;
+}
+.registro button a{
+    color: #000;
+    margin: 16px 5;
+    font-size: 16px;
+    font-family: Letra;
+}
+.registro p{
+    color: #FFF;
+}
+body{
+    height: 100%;
+    max-height: 40%;
+    background-color: #000;
+}

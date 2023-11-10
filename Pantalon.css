@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  @font-face{
+    font-family: Letra;
+    src: url("aAtmospheric.ttf");
+  }
+  
+  /*----------------------------------------------------------------CELULAR y TABLET-------------------------------------------------------------------------*/
+  @media (max-width: 991.82px) and (orientation: portrait){
+  
+  /*BARRA LATERAL*/
+  .menu li{
+    color: transparent;
+    font-size: 0;
+    float: left;
+  }
+  /*BODY*/
+  body{
+    background-color: #000;
+  }
+  .titulo{
+    background-color: #FFF;
+    margin: 10px;
+    border-radius: 25px;
+  }
+  h1{
+    color: #000;
+    font-family: Letra;
+    padding: 5px;
+  }
+  
+  .whatsapp{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 1;
+  }
+  .whatsapp img{
+    height: 50px;
+  }
+  
+  /*IMAGENES Y PRECIOS*/
+  .galeria{
+    margin: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    background-color: #FFF;
+    padding: 10px;
+    border-radius: 25px;
+  }
+  .precios img{
+    width: 100%;
+    border-radius: 20px;
+  }
+  .precios{
+    position: relative;
+  }
+  .precios h3{
+    position: absolute;
+    bottom: 0;
+    color: #FFF;
+    background: #000;
+    width: auto;
+    margin: 0;
+    padding: 5px;
+    font-family: Letra;
+    font-size: 14px;
+  }
+  .precios h2{
+    position: absolute;
+    font-size: 15px;
+    font-family: Letra;
+    color: #000;
+    top: 10px;
+    right: 10px;
+    background-color: #FFF;
+  }
+  .redes{
+    margin-bottom: 100%;
+  }
+  .redes img{
+    height: 50px;
+  }
+  }
+  
+  
+  
+  
+  
+  /*-----------------------------------------------------------------PC---------------------------------------------------------------------------*/
+  @media (min-width:887px){
+    body{
+      background-color: #000;
+      
+    }
+    .menu ul{
+      list-style: none;
+      font-family: Letra;
+      font-size: 20px;
+      margin: 0;
+      padding: 0;
+      width: 15%;
+      line-height: 78px;
+      background-color: #000;
+      float: left;
+    }
+    .menu li a{
+      display: block;
+      color: #FFF;
+      padding: 0px 12px;
+      text-decoration: none;
+    }
+    .menu li a:hover{
+      background-color: #272626;
+    }
+  
+    .redes{
+      text-align:right;
+      margin-bottom: 100%;
+    }
+    .redes img{
+      height: 50px;
+    }
+  
+    /*-----------IMÁGENES Y PRECIOS----*/
+    .titulo{
+      background-color: #FFF;
+      margin: 10px;
+      margin-left: 15%;
+      border-radius: 25px;
+    }
+    h1{
+      text-align: center;
+      color: #000;
+      font-family: Letra;
+      padding: 5px;
+    }
+    .scroll{
+background-color: #FFF;
+box-shadow: .1rem .2rem .3rem;
+color: #000;
+    }
+    .scroll img{
+      filter: invert(15%);
+    }
+    .header-carrito{
+      background-color: #FFF;
+      color: #000;
+      font-family: Letra;
+      font-size: 15px;
+      width: 50%;
+      height: 50px;
+      border-radius: 20px;
+      text-align: center;
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      padding: 25px;
+      margin-left: 30%;
+    }
+    .header-carrito img{
+      width: 80px;
+      height: auto;
+    }
+
+    .contenedor{
+      margin: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    background-color: #FFF;
+    padding: 10px;
+    border-radius: 25px;      
+    }
+    .carrito-item{
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background-color: #FFF;
+      color: #000;
+      border-radius: 20px;
+      margin-top: 10px;
+      border: 1px solid #000;
+      position: relative;
+      }
+    .carrito-item img{
+      border-radius: 20px 20px 0 0;
+    }
+    .informacion{
+      padding: 5px;
+      font-family: Letra;
+      font-size: 18px;
+    }
+    .boton{
+      max-width: 100%;
+      background-color: #000;
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: 700;
+      border-radius: 20px;
+      border: #000;
+      padding: 10px;
+      overflow: hidden;
+    }
+    .carrito-item:hover{
+      box-shadow: 0 0 10px #313131;
+    }
+    .boton:hover{
+      scale: 1.05;
+    }
+
+    
+    
+  
+
+    img{
+      height: 350px;
+      width: auto;
+      
+    }
+    
+    
+    
+    
+  
+    .whatsapp img{
+      height: 0;
+      width: 0;
+    }
+  }
+  
+    /*HEADER*/
+    header{
+      background-color: #FFF;
+      height: 6vh;
+      align-items: center;
+    }
+    .logo{
+      float: left;
+    }
+    .logo a img{
+      height: 70px;
+      margin-top: 5px;
+      margin-left: 25px;
+    }
+    .redes li{
+      list-style: none;
+      display: inline;
+      justify-content: space-between;
+    }
+    .redes a img{
+      width: auto;
+    }
+    /*carrito /*
+    *{
+    font-family:letra;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline:none;border:none;
+    text-decoration:none;
+    transition: all .2s linear;
+    }
+  
